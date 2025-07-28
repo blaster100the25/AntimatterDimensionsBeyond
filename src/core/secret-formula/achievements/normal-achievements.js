@@ -1315,6 +1315,46 @@ export const normalAchievements = [
     get reward() { return `All Galaxies are ${formatPercents(0.01)} stronger.`; },
     effect: 1.01
   },
+  {
+    id: 181,
+    name: "Achievement 181",
+    description: "Achievement 181",
+  },
+  {
+    id: 182,
+    name: "Achievement 182",
+    description: "Achievement 182",
+  },
+  {
+    id: 183,
+    name: "Achievement 183",
+    description: "Achievement 183",
+  },
+  {
+    id: 184,
+    name: "Achievement 184",
+    description: "Achievement 184",
+  },
+  {
+    id: 185,
+    name: "Achievement 185",
+    description: "Achievement 185",
+  },
+  {
+    id: 186,
+    name: "Achievement 186",
+    description: "Achievement 186",
+  },
+  {
+    id: 187,
+    name: "Achievement 187",
+    description: "Achievement 187",
+  },
+  {
+    id: 188,
+    name: "Achievement 188",
+    description: "Achievement 188",
+  },
   /*
   {
     id: 181,

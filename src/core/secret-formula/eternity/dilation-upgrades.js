@@ -26,22 +26,19 @@ export const dilationUpgrades = {
     initialCost: 1e4,
     increment: 10,
     description: () =>
-      ((SingularityMilestone.dilatedTimeFromSingularities.canBeApplied || Achievement(187).canBeApplied)
+      ((SingularityMilestone.dilatedTimeFromSingularities.canBeApplied)
         ? `${formatX(2 * Effects.product(
-          SingularityMilestone.dilatedTimeFromSingularities,
-          Achievement(187)
+          SingularityMilestone.dilatedTimeFromSingularities
         ), 2, 2)} Dilated Time gain`
         : "Double Dilated Time gain"),
     effect: bought => {
       const base = 2 * Effects.product(
-        SingularityMilestone.dilatedTimeFromSingularities,
-        Achievement(187)
+        SingularityMilestone.dilatedTimeFromSingularities
       );
       return Decimal.pow(base, bought);
     },
     formatEffect: value => {
-      const nonInteger = SingularityMilestone.dilatedTimeFromSingularities.canBeApplied ||
-        Achievement(187).canBeApplied;
+      const nonInteger = SingularityMilestone.dilatedTimeFromSingularities.canBeApplied;
       return formatX(value, 2, nonInteger ? 2 : 0);
     },
     formatCost: value => format(value, 2),

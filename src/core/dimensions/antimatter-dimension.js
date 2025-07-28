@@ -161,7 +161,6 @@ function applyNDPowers(mult, tier) {
       InfinityUpgrade.totalTimeMult.chargedEffect,
       InfinityUpgrade.thisInfinityTimeMult.chargedEffect,
       AlchemyResource.power,
-      Achievement(183),
       PelleRifts.paradox
     );
 

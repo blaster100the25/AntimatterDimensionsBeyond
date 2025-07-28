@@ -318,6 +318,6 @@ export const imaginaryUpgrades = [
     checkEvent: GAME_EVENT.GAME_TICK_AFTER,
     canLock: true,
     lockEvent: "equip another non-Companion Glyph",
-    description: "Unlock Pelle, Celestial of Antimatter",
+    description: "Unlock Minerals",
   },
 ];

@@ -1315,6 +1315,7 @@ export const normalAchievements = [
     get reward() { return `All Galaxies are ${formatPercents(0.01)} stronger.`; },
     effect: 1.01
   },
+  /*
   {
     id: 181,
     displayId: 666,
@@ -1383,4 +1384,5 @@ export const normalAchievements = [
     checkRequirement: () => GameEnd.endState > END_STATE_MARKERS.GAME_END && !GameEnd.removeAdditionalEnd,
     checkEvent: GAME_EVENT.GAME_TICK_AFTER
   },
+  */
 ];

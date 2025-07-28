@@ -1825,8 +1825,7 @@ export const celestialNavigation = {
         text: complete => {
           if (complete === 1) {
             return [
-              "Unlock Pelle",
-              "The Celestial of Antimatter"
+              "Unlock Minerals",
             ];
           }
           let laitelaString = `${format(Currency.eternityPoints.value)} / ${format("1e4000")} EP`;
@@ -1836,8 +1835,7 @@ export const celestialNavigation = {
             laitelaString = "Lai'tela's Reality has been destroyed";
           }
           return [
-            "Unlock Pelle",
-            "The Celestial of Antimatter",
+            "Unlock Minerals",
             `${format(Currency.imaginaryMachines.value, 2)} / ${format(1.6e15, 2)} iM`,
             laitelaString
           ];
@@ -1868,7 +1866,7 @@ export const celestialNavigation = {
     node: {
       clickAction: () => Tab.celestials.pelle.show(true),
       incompleteClass: "c-celestial-nav__test-incomplete",
-      symbol: "♅",
+      symbol: "?",
       symbolOffset: "1.6",
       fill: "crimson",
       position: Positions.pelleAchievementRequirement,
@@ -1878,7 +1876,7 @@ export const celestialNavigation = {
       forceLegend: () => Pelle.isUnlocked && !Pelle.hasGalaxyGenerator,
       legend: {
         text: complete => {
-          if (complete >= 1) return Pelle.isDoomed ? "Doomed Reality" : "Doom your Reality";
+          if (complete >= 1) return Pelle.isDoomed ? "Minerals" : "Unlock Minerals";
           const achievements = [Achievements.prePelleRows.countWhere(r => r.every(a => a.isUnlocked)),
             Achievements.prePelleRows.length];
           const alchemy = [AlchemyResources.all.countWhere(r => r.capped), AlchemyResources.all.length];
